@@ -1,0 +1,452 @@
+<!--
+FIXES:
+1) Replace images of cars to autotrader
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Zephyr - Inventory</title>
+    
+        <!-- This should be same in every page! -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lahore's Auto Car Dealership">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+
+        <!-- This should be same in every page! -->
+        <header id="header">
+            <div class="quick-bar">
+                <img src="main/location-pinW.png">
+                <a id="address" href="#address" class="quick-link">Ontario, Canada</a>
+                <div class="quick-bar-spacing"></div>
+                <img src="main/phoneW.png">
+                <a id="phone" href="contact.html" class="quick-link">+1 (123) 456-7890</a>
+            </div>
+
+            <div class="main-bar">
+                <img id="header-img" src="main/logo_simple.svg">
+                <nav id="navbar">
+                    <a class="nav-link" id="home" href="index.html">Home</a>
+                    <a class="nav-link" id="showroom" href="showroom.html" style="text-decoration: underline;">Showroom</a>
+                    <a class="nav-link" id="appraise" href="appraise.html">Appraise my trade</a>
+                    <div class="hamburger-menu">
+                        <img class="hamburger-button" src="main/hamburgerB.png">
+                        <div class="menu-items">
+                            <a class="nav-link" id="contact" href="finance.html">Financing</a>
+                            <a class="nav-link" id="About" href="about.html">About</a>
+                            <a class="nav-link" id="appointment" href="appointment.html">Book an appointment</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="main-margin"></div>
+        <main class="main-content">
+            <div id="category-select">
+                <h1>Vehicle type</h1>
+                <h3>Jump to a category</h3>
+                <div id="category-select-options">
+                    <input id="submit" type="submit" value="Sedan" onclick="location.href='#sedan'" class="category-select-option1">
+                    <input id="submit" type="submit" value="Hatchback" onclick="location.href='#hatchback'" class="category-select-option2">
+                    <input id="submit" type="submit" value="SUV" onclick="location.href='#suv'" class="category-select-option3">
+                </div>
+            </div>
+            <div id="category-div">
+                <div id="category-div-line"></div><h1 id="category-text">Sedans</h1><div id="category-div-line2"></div>
+            </div>
+            <section class="category" id="sedan">
+                <div class="featured-reviews">
+                    <div class="tile">
+                        <img src="./inventory/clarity-2019.avif">
+                        <h1>Honda Clarity 2019</h1>
+                        <h3>Touring | Plug-in Hybrid</h3>
+                        <div class="main-info">
+                            <span class="price">$21,500</span><span class="odometer">49,951Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Silver Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>42 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>eCVT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>1.5L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>212 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>JHMZC5F36KC007240</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>H4049</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/avalon-2017.jpg">
+                        <h1>Toyota Avalon 2017</h1>
+                        <h3>Limited | V6</h3>
+                        <div class="main-info">
+                            <span class="price">$25,560</span><span class="odometer">35,295Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Diamond Blue</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Beige</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>24 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>6-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3.5L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>268 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>1000 lbs</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>4T1BK1EB5HU246834</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C6634</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/accord-2016.jpg">
+                        <h1>Honda Accord 2016</h1>
+                        <h3>EX-L | V6</h3>
+                        <div class="main-info">
+                            <span class="price">$17,399</span><span class="odometer">102,783Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Champagne Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Ivory Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>26 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>10-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3.5L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>278 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>1HGCR3F88GA033463</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C7503</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/m3-2016.jpg">
+                        <h1>BMW M3 2016</h1>
+                        <h3>V6 Turbo</h3>
+                        <div class="main-info">
+                            <span class="price">$47,550</span><span class="odometer">54,327Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Alpine White</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Red Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>20 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>7-speed DCT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>RWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>425 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>WBS8M9C5XG5D30532</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C241</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/k5-2023.avif">
+                        <h1>Kia K5 2023</h1>
+                        <h3>LXS | Turbo</h3>
+                        <div class="main-info">
+                            <span class="price">$19,799</span><span class="odometer">55,344Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>White Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Cloth</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>31 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>8-speed DCT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>1.6L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>180 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>5XXG14J2XNG095244</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>7VQP6F</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/a4-2019.jpg">
+                        <h1>Audi A4 2019</h1>
+                        <h3>Quattro | AWD</h3>
+                        <div class="main-info">
+                            <span class="price">$19,799</span><span class="odometer">21,345Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Mythos Black</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>27 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>9-speed Auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>248 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>WAUENAF46KN004842</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>2003232622</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/mazda3-2012.jpg">
+                        <h1>Mazda 3 2013</h1>
+                        <h3>Touring</h3>
+                        <div class="main-info">
+                            <span class="price">$8,595</span><span class="odometer">93,706Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Metallic Grey</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>27 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>6-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>148 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>JM1BL1VG1C1503734</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C5542</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/dart-2016.webp">
+                        <h1>Dodge Dart 2016</h1>
+                        <h3>SXT</h3>
+                        <div class="main-info">
+                            <span class="price">$13,945</span><span class="odometer">38,674Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Blue Gem Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Tungsten</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>27 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>5-speed DCT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2.4L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>184 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>1C3CDFBB0GD680850</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C2333</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="category-div">
+                <div id="category-div-line"></div><h1 id="category-text">Hatchbacks</h1><div id="category-div-line2"></div>
+            </div>
+            <section class="category" id="sedan">
+                <div class="featured-reviews">
+                    <div class="tile">
+                        <img src="./inventory/civic-2023.jpg">
+                        <h1>Honda Civic 2023</h1>
+                        <h3>Sport</h3>
+                        <div class="main-info">
+                            <span class="price">$24,799</span><span class="odometer">10,598Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Black Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Cloth</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>33 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>CVT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>158 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>19XFL2H84PE024595</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>8A0134C</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    
+                    <div class="tile">
+                        <img src="./inventory/golf-2020.jpg">
+                        <h1>Volkswagen Golf R 2020</h1>
+                        <h3>Navigation</h3>
+                        <div class="main-info">
+                            <span class="price">$27,999</span><span class="odometer">61,408Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Oryx White</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>26 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>5-speed DCT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>288 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>970 lbs</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>WVWVA7AU8KW149222</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>8D5Q61</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="category-div">
+                <div id="category-div-line"></div><h1 id="category-text">SUVs</h1><div id="category-div-line2"></div>
+            </div>
+            <section class="category"  id="suv">
+                <div class="featured-reviews">
+                    <div class="tile">
+                        <img src="./inventory/cx-9-2021.webp">
+                        <h1>Mazda CX-9 2021</h1>
+                        <h3>Touring | AWD</h3>
+                        <div class="main-info">
+                            <span class="price">$22,699</span><span class="odometer">90,461Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Dark Steel</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>23 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>6-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2.5L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>227 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>3,500 lbs</span></div>
+                            <div class="sub-info-entry"><span>Payload capacity</span><span>1,434 lbs</span></div>
+                            <div class="sub-info-entry"><span>Seats</span><span>7</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>JM3TCBCY1M0528653</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C7603</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/gls-2017.jpg">
+                        <h1>Mercedez GLS 2017</h1>
+                        <h3>4MATIC | V6 | AWD</h3>
+                        <div class="main-info">
+                            <span class="price">$27,980</span><span class="odometer">70,639Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Steel Black</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>19 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>9-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>362 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>7,500 lbs</span></div>
+                            <div class="sub-info-entry"><span>Seats</span><span>7</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>4JGDF6EEXHA905244</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C1474</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/highlander-2022.jpg">
+                        <h1>Toyota Highlander 2022</h1>
+                        <h3>V6 | AWD</h3>
+                        <div class="main-info">
+                            <span class="price">$42,533</span><span class="odometer">6,023Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Midnight Black</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leatherette</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>23 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>8-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3.5L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>295 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>5,000 lbs</span></div>
+                            <div class="sub-info-entry"><span>Payload capacity</span><span>1,565 lbs</span></div>
+                            <div class="sub-info-entry"><span>Seats</span><span>7</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>5TDGZRBH9NS250045</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C64096</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/outlander-2023.jpg">
+                        <h1>Mitsubishi Outlander 2023</h1>
+                        <h3>Black Edition | AWD</h3>
+                        <div class="main-info">
+                            <span class="price">$32,000</span><span class="odometer">7,276Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>White Diamond</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leatherette</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>26 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>CVT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>2.5L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>181 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>2,000 lbs</span></div>
+                            <div class="sub-info-entry"><span>Payload capacity</span><span>1,398 lbs</span></div>
+                            <div class="sub-info-entry"><span>Seats</span><span>7</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>JA4J4VA82PZ037691</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C03793</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This should be same in every page! -->
+            <section id="back-to-top">
+                <input id="submit" type="button" value="BACK TO TOP" onclick="location.href='#top'">    
+            </section>
+            <footer id="help-and-info">
+                <div class="socials">
+                    <h1>Stay in touch</h1>
+                    <h5>Twitter</h5>
+                    <h5>Youtube</h5>
+                    <h5>Tiktok</h5>
+                    <h5>Instagram</h5>
+                    <h5>Facebook</h5>
+                    <h5>Snapchat</h5>
+                    <h5>Pinterest</h5>
+                    <h5>LinkedIn</h5>
+                </div>
+                <div class="useful-links">
+                    <h1>Quick Links</h1>
+                    <a href="appraise.html">Appraise my trade</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="appoinment.html">Book an appointment</a>
+                </div>
+                <div class="useful-text">
+                    <p>We know buying a car is a big decision, so we’re here to make it easy and stress-free. With years of experience, we offer top-quality vehicles at great prices and aim to exceed your expectations. If you don’t find what you’re looking for, let us know—we’ll help you find the perfect car through our vast network. Visit our showroom or call us to see how simple car buying can be.</p>
+                    <p>A group project of Bilal, Shawal and Khadija. Thank you for visiting!</p>
+                    <h3>Zephyr Motors &#169; 2024</h3>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

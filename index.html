@@ -1,0 +1,286 @@
+<!--
+FIXES THAT NEED TO BE IMPLEMENED ASAP:
+1) Replace images of cars to autotrader
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Zephyr - Home</title>
+    
+        <!-- This should be same in every page! -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lahore's Auto Car Dealership">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+
+    <body>
+
+        <!-- This should be same in every page! -->
+        <header id="header">
+            <div class="quick-bar">
+                <img src="main/location-pinW.png">
+                <a id="address" href="#map" class="quick-link">Ontario, Canada</a>
+                <div class="quick-bar-spacing"></div>
+                <img src="main/phoneW.png">
+                <a id="phone" href="contact.html" class="quick-link">+1 (123) 456-7890</a>
+            </div>
+
+            <div class="main-bar">
+                <img id="header-img" src="main/logo_simple.svg">
+                <nav id="navbar">
+                    <a class="nav-link" id="home" href="#home" style="text-decoration: underline;">Home</a>
+                    <a class="nav-link" id="showroom" href="showroom.html">Showroom</a>
+                    <a class="nav-link" id="appraise" href="appraise.html">Appraise my trade</a>
+                    <div class="hamburger-menu">
+                        <img class="hamburger-button" src="main/hamburgerB.png">
+                        <div class="menu-items">
+                            <a class="nav-link" id="contact" href="finance.html">Financing</a>
+                            <a class="nav-link" id="About" href="about.html">About</a>
+                            <a class="nav-link" id="appointment" href="appointment.html">Book an appointment</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <main class="main-content">
+            <section id="main-cover">
+                <img id="main-cover-img" src="main/main-cover.jpg">
+                <form id="form" action="">
+                    <div class="main-heading">
+                        <h1><a href="showroom.html">Looking for a car?</a></h1>
+                        <img class="heading-arrow" src="main/right-arrow.svg">
+                    </div>
+                    <span>Subscribe to stay updated on our inventory</span>
+                    <input id="email" name="email" required type="email" placeholder="Enter email address">
+                    <input id="submit" type="submit" name="email" value="Subscribe">
+                </form>
+            </section>
+            <section id="sell">
+					<div class="sell-text">
+						<h1>Sell us your car</h1>
+						<h3>Get an offer from our dealership today!</h3>
+					</div>
+					<input type="button" value="SELL YOUR CAR" id="submit" onclick="location.href='appraise.html'">
+            </section>
+            <section id="intro">
+                <img class="intro-img-fg" src="main/intro-img-fg.png">
+                <img class="intro-img" src="main/intro-img.png">
+                <div class="intro-text">
+                    <h1>Welcome to Zephyr Motors</h1>
+                    <p>At Zephyr Motors, we take pride in offering high-quality used cars and delivering exceptional customer service. Our commitment to meeting your needs is evident in the loyalty of our returning customers. Whether you're making your first purchase with us or adding to a history of satisfied transactions, our dedicated sales team is here to ensure you have the best buying experience possible.</p>
+                    <input id="submit" type="button" value="More about us" onclick="location.href='about.html'">
+            </div>
+            </section>
+            <section class="category">
+                <div class="category-type">
+                    <div class="featured-tagline">
+                        <h1>Featured vehicles on sale</h1>
+                        <h3>Buy them off our lot today!</h3>
+                    </div>
+                    <input type="button" value="SEE MORE" id="submit" onclick="location.href='showroom.html'">
+                </div>
+                <div class="featured-reviews">
+                    <div class="tile">
+                        <img src="./inventory/clarity-2019.avif">
+                        <h1>Honda Clarity 2019</h1>
+                        <h3>Touring | Plug-in Hybrid</h3>
+                        <div class="main-info">
+                            <span class="price"><strike>$21,500</strike></span><span class="odometer">49,951Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Silver Pearl</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>42 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>eCVT</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>1.5L 4-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>212 hp</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>JHMZC5F36KC007240</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>H4049</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <img src="./inventory/avalon-2017.jpg">
+                        <h1>Toyota Avalon 2017</h1>
+                        <h3>Limited | V6</h3>
+                        <div class="main-info">
+                            <span class="price">$25,560</span><span class="odometer">35,295Km</span> 
+                        </div>
+                        <div class="sub-info">
+                            <div class="sub-info-entry"><span>Exterior color</span><span>Diamond Blue</span></div>
+                            <div class="sub-info-entry"><span>Interior color</span><span>Beige</span></div>
+                            <div class="sub-info-entry"><span>Mileage</span><span>24 MPG</span></div>
+                            <div class="sub-info-entry"><span>Transmission</span><span>6-speed auto</span></div>
+                            <div class="sub-info-entry"><span>Drivetrain</span><span>FWD</span></div>
+                            <div class="sub-info-entry"><span>Engine</span><span>3.5L 6-cyl</span></div>
+                            <div class="sub-info-entry"><span>Horsepower</span><span>268 hp</span></div>
+                            <div class="sub-info-entry"><span>Towing capacity</span><span>1,000 lbs</span></div>
+                            <div class="sub-info-entry"><span>VIN #</span><span>4T1BK1EB5HU246834</span></div>
+                            <div class="sub-info-entry"><span>Stock number</span><span>C6634</span></div>
+                        </div>
+                        <div id="input-box">
+                            <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                            <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                        </div>
+                    </div>
+                        <div class="tile">
+                            <img src="./inventory/cx-9-2021.webp">
+                            <h1>Mazda CX-9 2021</h1>
+                            <h3>Touring | AWD</h3>
+                            <div class="main-info">
+                                <span class="price">$22,699</span><span class="odometer">90,461Km</span> 
+                            </div>
+                            <div class="sub-info">
+                                <div class="sub-info-entry"><span>Exterior color</span><span>Dark Steel</span></div>
+                                <div class="sub-info-entry"><span>Interior color</span><span>Black Leather</span></div>
+                                <div class="sub-info-entry"><span>Mileage</span><span>23 MPG</span></div>
+                                <div class="sub-info-entry"><span>Transmission</span><span>6-speed auto</span></div>
+                                <div class="sub-info-entry"><span>Drivetrain</span><span>AWD</span></div>
+                                <div class="sub-info-entry"><span>Engine</span><span>2.5L 4-cyl</span></div>
+                                <div class="sub-info-entry"><span>Horsepower</span><span>227 hp</span></div>
+                                <div class="sub-info-entry"><span>Towing capacity</span><span>3,500 lbs</span></div>
+                                <div class="sub-info-entry"><span>Payload capacity</span><span>1,434 lbs</span></div>
+                                <div class="sub-info-entry"><span>Seats</span><span>7</span></div>
+                                <div class="sub-info-entry"><span>VIN #</span><span>JM3TCBCY1M0528653</span></div>
+                                <div class="sub-info-entry"><span>Stock number</span><span>C7603</span></div>
+                            </div>
+                            <div id="input-box">
+                                <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                                <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src="./inventory/m3-2016.jpg">
+                            <h1>BMW M3 2016</h1>
+                            <h3>V6 Turbo</h3>
+                            <div class="main-info">
+                                <span class="price">$47,550</span><span class="odometer">54,327Km</span> 
+                            </div>
+                            <div class="sub-info">
+                                <div class="sub-info-entry"><span>Exterior color</span><span>Alpine White</span></div>
+                                <div class="sub-info-entry"><span>Interior color</span><span>Red Leather</span></div>
+                                <div class="sub-info-entry"><span>Mileage</span><span>20 MPG</span></div>
+                                <div class="sub-info-entry"><span>Transmission</span><span>7-speed DCT</span></div>
+                                <div class="sub-info-entry"><span>Drivetrain</span><span>RWD</span></div>
+                                <div class="sub-info-entry"><span>Engine</span><span>3L 6-cyl</span></div>
+                                <div class="sub-info-entry"><span>Horsepower</span><span>425 hp</span></div>
+                                <div class="sub-info-entry"><span>VIN #</span><span>WBS8M9C5XG5D30532</span></div>
+                                <div class="sub-info-entry"><span>Stock number</span><span>C241</span></div>
+                            </div>
+                            <div id="input-box">
+                                <input id="submit" type="submit" value="CONTACT" onclick="location.href='contact.html'">
+                                <input id="submit" type="submit" value="BOOK"  onclick="location.href='appointment.html'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="reviews">
+                <div class="reviews-tagline">
+                    <h1>Reviews</h1>
+                    <h3>What our customers say about us</h3>
+                </div>
+                <div class="featured-reviews">
+                    <div class="tile-overflow">
+                        <div class="tile">
+                            <h3>Faraz Rafiq</h3>
+                            <p>"Great. Had a lovely time buying a new car from these guys. I would recommend everyone who wants a good car in a reasonable price bracket."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Hamza Afzaal</h3>
+                            <p>"Amazing people. I bought a car from here and it's been running well. I would buy from them again."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Anass Khan</h3>
+                            <p>"I recently bought a car from here. The poeple were nice. I had minor gripes with the condition of the car but they were immediately resolved. Great service over all."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Balaj Khan</h3>
+                            <p>"Few days after my purchase my car broke down. These guys were really quick to respond and I got a replacement with days. Such kind of honesty is rare in businesses these days."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Zeryab Khan</h3>
+                            <p>"Great bunch of dudes. Got my ride in brand smack condition. 'been running since I bought it months ago."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Muhammad Abdullah</h3>
+                            <p>"Best place to buy a car. The service was amazing. Great value for money. I would buy from them again."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Talha Sarwar</h3>
+                            <p>"Exceptional service. There are variety of cars to choose from. I bought a Civic and it's been running well. I would buy from them again."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Haris Ahmed</h3>
+                            <p>"Great place to buy a car. I wanted to buy an Avalon and they had the perfect trim."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Muhummad Zain</h3>
+                            <p>"Double it, give it to the next person."</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Rao Tabeed</h3>
+                            <p>"Very good looking car. Business is good. Big investor of this company. These guys will make it big."</p>
+                            <p>Contact: 03188658184</p>
+                        </div>
+                        <div class="tile">
+                            <h3>Mahad Anwer</h3>
+                            <p>"I had good experience with these guys. If someone needs a good car quick and easy, I would recommend these guys."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="map">
+                <h1>We are located at 2434 Keele St, Toronto, Ontario</h1>
+                <iframe id="iframe" class="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5768.34661780098!2d-79.48264409602642!3d43.706947291957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3115f38bbe1b%3A0x61d8f0b53495b8b6!2sToronto%20Best%20Auto!5e0!3m2!1sen!2sus!4v1731918997935!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <!-- This should be same in every page! -->
+            <section id="back-to-top">
+                <input id="submit" type="button" value="BACK TO TOP" onclick="location.href='#top'">
+            </section>
+            <footer id="help-and-info">
+                <div class="socials">
+                    <h1>Stay in touch</h1>
+                    <h5>Twitter</h5>
+                    <h5>Youtube</h5>
+                    <h5>Tiktok</h5>
+                    <h5>Instagram</h5>
+                    <h5>Facebook</h5>
+                    <h5>Snapchat</h5>
+                    <h5>Pinterest</h5>
+                    <h5>LinkedIn</h5>
+                </div>
+                <div class="useful-links">
+                    <h1>Search for anything</h1>
+                    <input id="email" required type="text" placeholder="Type here to search">
+                    <h1>Quick Links</h1>
+                    <a href="appraise.html">Appraise my trade</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="appoinment.html">Book an appointment</a>
+                </div>
+                <div class="useful-text">
+                    <p>We know buying a car is a big decision, so we’re here to make it easy and stress-free. With years of experience, we offer top-quality vehicles at great prices and aim to exceed your expectations. If you don’t find what you’re looking for, let us know—we’ll help you find the perfect car through our vast network. Visit our showroom or call us to see how simple car buying can be.</p>
+                    <p>A group project of Bilal, Shawal and Khadija. Thank you for visiting!</p>
+                    <h3>Zephyr Motors &#169; 2024</h3>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Zephyr - Appraise</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lahore's Auto Car Dealership">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+
+        <!-- This should be same in every page! -->
+        <header id="header">
+            <div class="quick-bar">
+                <img src="main/location-pinW.png">
+                <a id="address" href="#address" class="quick-link">Ontario, Canada</a>
+                <div class="quick-bar-spacing"></div>
+                <img src="main/phoneW.png">
+                <a id="phone" href="contact.html" class="quick-link">+1 (123) 456-7890</a>
+            </div>
+
+            <div class="main-bar">
+                <img id="header-img" src="main/logo_simple.svg">
+                <nav id="navbar">
+                    <a class="nav-link" id="home" href="index.html">Home</a>
+                    <a class="nav-link" id="showroom" href="showroom.html">Showroom</a>
+                    <a class="nav-link" id="appraise" href="appraise.html" style="text-decoration: underline;">Appraise my trade</a>
+                    <div class="hamburger-menu">
+                        <img class="hamburger-button" src="main/hamburgerB.png">
+                        <div class="menu-items">
+                            <a class="nav-link" id="contact" href="finance.html">Financing</a>
+                            <a class="nav-link" id="About" href="about.html">About</a>
+                            <a class="nav-link" id="appointment" href="appointment.html">Book an appointment</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <main class="main-content">
+            <div id="main-margin"></div>
+            <h1 class="page-title">Appraise My Trade</h1>
+            <div id="main-division">
+                <section id="main-form">
+                    <img id="main-form-img" class="appraise-img" src="main/appraise.png">
+                    <p>We'll buy your vehicle at the highest dollar. Tell us a bit about yourself and your vehicle and we will contact you promptly.</p>
+                    <section id="sub-form">
+                        <h2>Personal Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name*</label>
+                                <input type="text" id="fname" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name*</label>
+                                <input type="text" id="lname" name="name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appraise-email">Email</label>
+                                <input type="email" id="appraise-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Phone Number</label>
+                                <input type="tel" id="number" name="number">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Vehicle Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                            <label for="make">Make</label>
+                            <input type="text" id="make" name="name" placeholder="e.g. Honda">
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model</label>
+                                <input type="text" id="model" name="name" placeholder="e.g. Civic">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="year">Year</label>
+                                <select id="year">
+                                    <option value="" disabled selected>Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="trim">Trim</label>
+                                <input id="trim" name="name" type="text" placeholder="e.g. Sport">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="odometer">Kilometers</label>
+                                <input id="odometer" name="number" type="number">
+                            </div>
+                            <div class="form-group">
+                                <label for="transmission">Transmission</label>
+                                <select for="transmission">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="AT">Traditional Automatic Transmission</option>
+                                    <option value="CVT">Continuously Variable Transmission</option>
+                                    <option value="DCT">Dual-clutch Transmission</option>
+                                    <option value="AMT">Automated Transmission</option>
+                                    <option value="MT">Manual Transmission</option>
+                                    <option value="SMT">Sequential Transmission</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="drivetrain">Drivetrain</label>
+                                <select id="drivetrain">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="FWD">FWD</option>
+                                    <option value="RWD">RWD</option>
+                                    <option value="AWD">AWD</option>
+                                    <option value="4WD">4WD</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fuel-type">Fuel type</label>
+                                <select id="fuel">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                    <option value="electricity">Electricity</option>
+                                    <option value="hydrogen">Hydrogen</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="condition">Condition</label>
+                                <select id="condition">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="excellent">Excellent</option>
+                                    <option value="good">Good</option>
+                                    <option value="fair">Fair</option>
+                                    <option value="poor">Poor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="color">Exterior color</label>
+                                <input id="color" name="name" type="name" placeholder="e.g. Black">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Additional Info</h2>
+                        <textarea></textarea>
+                    </section>
+                    <section id="sub-form">
+                        <input type="submit" value="Submit" id="submit" onclick="appraise()"">
+                    </section>
+                    <span>*Required</span>
+                </section>
+                <section id="main-form">
+                    <h2>Contact Information</h2>
+                    <h3>Our Address:</h3>
+                    <p><b>Zephyr Motors</b><br>
+                        2434 Keele St, Toronto<br>
+                        Ontario, Canada</p>
+        
+                    <h3>Phone:</h3>
+                    <p>+1 (123) 456-7890</p>
+        
+                    <h3>Email:</h3>
+                    <p>info@Zephyrmotors.com</p>
+        
+                    <h3>Business Hours:</h3>
+                    <p>
+                        Monday to Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 10:00 AM - 4:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                    <input type="submit" value="Contact us" id="submit" onclick="location.href='contact.html'">
+                </section>
+                <div class="r-margin"></div>
+            </div>
+            <footer id="help-and-info">
+                <div class="socials">
+                    <h1>Stay in touch</h1>
+                    <a href="https://reddit.com/?lang=en"><h5> Twitter</h5></a>
+                    <h5>Youtube</h5>
+                    <h5>Tiktok</h5>
+                    <h5>Instagram</h5>
+                    <h5>Facebook</h5>
+                    <h5>Snapchat</h5>
+                    <h5>Pinterest</h5>
+                    <h5>LinkedIn</h5>
+                </div>
+                <div class="useful-links">
+                    <h1>Quick Links</h1>
+                    <a href="appraise.html">Appraise my trade</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="appoinment.html">Book an appointment</a>
+                </div>
+                <div class="useful-text">
+                    <p>We know buying a car is a big decision, so we’re here to make it easy and stress-free. With years of experience, we offer top-quality vehicles at great prices and aim to exceed your expectations. If you don’t find what you’re looking for, let us know—we’ll help you find the perfect car through our vast network. Visit our showroom or call us to see how simple car buying can be.</p>
+                    <p>A group project of Bilal, Shawal and Khadija. Thank you for visiting!</p>
+                    <h3>Zephyr Motors &#169; 2024</h3>
+                </div>
+            </footer>
+        </main>
+    <script>
+        function appraise()
+        {
+            alert("Appraisal form submitted!");
+        }
+    </script>
+    </body>
+</html>

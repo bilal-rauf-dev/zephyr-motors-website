@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Zephyr - Financing Application</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lahore's Auto Car Dealership">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+
+        <!-- This should be same in every page! -->
+        <header id="header">
+            <div class="quick-bar">
+                <img src="main/location-pinW.png">
+                <a id="address" href="#address" class="quick-link">Ontario, Canada</a>
+                <div class="quick-bar-spacing"></div>
+                <img src="main/phoneW.png">
+                <a id="phone" href="#phone" class="quick-link">+1 (123) 456-7890</a>
+            </div>
+
+            <div class="main-bar">
+                <img id="header-img" src="main/logo_simple.svg">
+                <nav id="navbar">
+                    <a class="nav-link" id="home" href="index.html">Home</a>
+                    <a class="nav-link" id="showroom" href="showroom.html">Showroom</a>
+                    <a class="nav-link" id="appraise" href="appraise.html">Appraise my trade</a>
+                    <div class="hamburger-menu">
+                        <img class="hamburger-button" src="main/hamburgerB.png">
+                        <div class="menu-items">
+                            <a class="nav-link" id="contact" href="finance.html">Financing</a>
+                            <a class="nav-link" id="About" href="about.html">About</a>
+                            <a class="nav-link" id="appointment" href="appointment.html">Book an appointment</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <main class="main-content">
+            <div id="main-margin"></div>
+            <h1 class="page-title">Finance Application</h1>
+            <div id="main-division">
+                <section id="main-form">
+                    <p>Get approved from home! Please fill out the secure credit application below.</p>
+                    <section id="sub-form">
+                        <h2>Personal Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="salutation">Salutation</label>
+                                <select id="salutation">
+                                    <option value="" disabled selected>Salutation</option>
+                                    <option value="dr">Dr</option>
+                                    <option value="miss">Miss</option>
+                                    <option value="mr">Mr.</option>
+                                    <option value="ms">Ms.</option>
+                                    <option value="mrs">Mrs.</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender">
+                                    <option value="" disabled selected>Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="non-gender">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">First Name*</label>
+                                <input type="text" id="fname" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name*</label>
+                                <input type="text" id="lname" name="name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="finance-email">Email*</label>
+                                <input type="email" id="finance-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Phone Number*</label>
+                                <input type="tel" id="number" name="number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="marital-status">Marital status*</label>
+                                <select id="marital-status">
+                                    <option value="" disabled selected>Marital status</option>
+                                    <option value="single">Single</option>
+                                    <option value="married">Married</option>
+                                    <option value="divored">Divored</option>
+                                    <option value="marital-other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="b-date">Birth date*</label>
+                                <input type="date" id="b-date" name="birthdate" placeholder="DD/MM/YYYY">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sin">SIN</label>
+                                <input type="text" id="sin" name="sin">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Current address</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">Address*</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City*</label>
+                                <input type="text" id="city" name="address">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="province">Provine*</label>
+                                <input type="text" id="province" name="address">
+                            </div>
+                            <div class="form-group">
+                                <label for="postal-code">Postal code*</label>
+                                <input type="text" id="postal-code" name="address">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration-year">Duration in years*</label>
+                                <input type="number" id="duration-year" name="duration">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-month">Duration in months*</label>
+                                <input type="number" id="duration-month" name="duration">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Home/Rent Mortgage Information</h2>
+                        <div class="form-row">
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="home-status">Home status*</label>
+                                <select id="home-status">
+                                    <option value="" disabled selected>Home status</option>
+                                    <option value="rent">Rent</option>
+                                    <option value="mortgage">Own with mortgage</option>
+                                    <option value="with-parent">With parent</option>
+                                    <option value="house-other-status">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="monthly-payment">Monthly payment*</label>
+                                <input id="monthly-payment" name="number" type="number">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Current Employment</h2>
+                        <div class="form-row">
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="employment-type">Employment type*</label>
+                                <select id="employment-type">
+                                    <option value="" disabled selected>Employment type</option>
+                                    <option value="full-time">Full-time</option>
+                                    <option value="part-time">Part-time</option>
+                                    <option value="contract">Contract</option>
+                                    <option value="self-employed">Self-employed</option>
+                                    <option value="retired">Retired</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="employer">Employer*</label>
+                                <input id="employer" name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="occupation">Occupation*</label>
+                                <input id="occupatino" name="name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="employment-address">Employment address*</label>
+                                <input id="employment-address" name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="employment-city">City*</label>
+                                <input id="employment-city" name="name" type="text">
+                            </div>
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="employment-province">Provine*</label>
+                                <input id="employment-province" name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="occupation">Occupation*</label>
+                                <input id="occupatino" name="name" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="employment-address">Employment address*</label>
+                                <input id="employment-address" name="name" type="text">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="post-code">Postal code*</label>
+                                <input id="postal-code" name="name" type="text">
+                            </div>
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="phone">Phone number*</label>
+                                <input id="phone" name="name" type="tel">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="income">Gross income*</label>
+                                <input id="income" name="name" type="number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration-year">Duration in years*</label>
+                                <input type="number" id="duration-year" name="duration">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-month">Duration in months*</label>
+                                <input type="number" id="duration-month" name="duration">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Previous Employment</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="employer">Employer</label>
+                                <input id="employer" name="name" type="text">
+                            </div>
+                            <div class ="form-group" class="dropdown-container">
+                                <label for="phone">Phone number</label>
+                                <input id="phone" name="name" type="tel">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration-year">Duration in years</label>
+                                <input type="number" id="duration-year" name="duration">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-month">Duration in months</label>
+                                <input type="number" id="duration-month" name="duration">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <h2>Other Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bankruptcy">Previous bankruptcy?</label>
+                                <select id="bankruptcy">
+                                    <option value="" disabled selected>Bankruptcy</option>
+                                    <option value="bankruptcy-yes">Yes</option>
+                                    <option value="bankruptcy-no">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="repossession">Previous repossession?</label>
+                                <select id="repossession">
+                                    <option value="" disabled selected>Repossession</option>
+                                    <option value="repossession-yes">Yes</option>
+                                    <option value="repossession-no">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="duration-year">Duration in years</label>
+                                <input type="number" id="duration-year" name="duration">
+                            </div>
+                            <div class="form-group">
+                                <label for="duration-month">Duration in months</label>
+                                <input type="number" id="duration-month" name="duration">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="sub-form">
+                        <p>I agree that by submitting this application, I authorize and give this dealership, as well as any potential financing source this dealership presents this application to, my consent to obtain my credit report from any credit reporting agency used to complete an investigation of my credit.</p>
+                    </section>
+                    <section id="sub-form">
+                        <input type="submit" value="Submit" id="submit">
+                    </section>
+                    <span>*Required</span>
+                </section>
+                <section id="main-form">
+                    <h2>Contact Information</h2>
+                    <h3>Our Address:</h3>
+                    <p><b>Zephyr Motors</b><br>
+                        2434 Keele St, Toronto<br>
+                        Ontario, Canada</p>
+        
+                    <h3>Phone:</h3>
+                    <p>+1 (123) 456-7890</p>
+        
+                    <h3>Email:</h3>
+                    <p>info@Zephyrmotors.com</p>
+        
+                    <h3>Business Hours:</h3>
+                    <p>
+                        Monday to Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 10:00 AM - 4:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                    <input type="submit" value="Contact us" id="submit" onclick="location.href='contact.html'">
+                </section>
+                <div class="r-margin"></div>
+            </div>
+            <footer id="help-and-info">
+                <div class="socials">
+                    <h1>Stay in touch</h1>
+                    <h5>Twitter</h5>
+                    <h5>Youtube</h5>
+                    <h5>Tiktok</h5>
+                    <h5>Instagram</h5>
+                    <h5>Facebook</h5>
+                    <h5>Snapchat</h5>
+                    <h5>Pinterest</h5>
+                    <h5>LinkedIn</h5>
+                </div>
+                <div class="useful-links">
+                    <h1>Quick Links</h1>
+                    <a href="appraise.html">Appraise my trade</a>
+                    <a href="contact.html">Contact us</a>
+                    <a href="appoinment.html">Book an appointment</a>
+                </div>
+                <div class="useful-text">
+                    <p>We know buying a car is a big decision, so we’re here to make it easy and stress-free. With years of experience, we offer top-quality vehicles at great prices and aim to exceed your expectations. If you don’t find what you’re looking for, let us know—we’ll help you find the perfect car through our vast network. Visit our showroom or call us to see how simple car buying can be.</p>
+                    <p>A group project of Bilal, Shawal and Khadija. Thank you for visiting!</p>
+                    <h3>Zephyr Motors &#169; 2024</h3>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
