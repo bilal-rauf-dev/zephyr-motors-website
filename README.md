@@ -9,6 +9,3 @@ A front-end car dealership website built in my 1st semester at FAST. Displays a 
 - Vehicle inventory display
 - Professional design
 - Responsive layout
-
-## Live Demo
-[View Site](bilal-rauf-dev.github.io/zephyr-motors-website)
